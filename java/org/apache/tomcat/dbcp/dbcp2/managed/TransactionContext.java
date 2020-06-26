@@ -22,7 +22,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Objects;
 
-import javax.transaction.xa.XAResource;
+import javax.transaction.xa.tc.XAResource;
 
 import jakarta.transaction.RollbackException;
 import jakarta.transaction.Status;

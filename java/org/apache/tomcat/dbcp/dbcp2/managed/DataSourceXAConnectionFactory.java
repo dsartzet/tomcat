@@ -26,7 +26,7 @@ import javax.sql.ConnectionEventListener;
 import javax.sql.PooledConnection;
 import javax.sql.XAConnection;
 import javax.sql.XADataSource;
-import javax.transaction.xa.XAResource;
+import javax.transaction.xa.tc.XAResource;
 
 import jakarta.transaction.TransactionManager;
 import jakarta.transaction.TransactionSynchronizationRegistry;
@@ -150,7 +150,7 @@ public class DataSourceXAConnectionFactory implements XAConnectionFactory {
 
         // get the real connection and XAResource from the connection
         final Connection connection = xaConnection.getConnection();
-        final XAResource xaResource = xaConnection.getXAResource();
+        final XAResource xaResource = (javax.transaction.xa.tc.XAResource) xaConnection.getXAResource();
 
         // register the xa resource for the connection
         transactionRegistry.registerConnection(connection, xaResource);

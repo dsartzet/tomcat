@@ -21,9 +21,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Objects;
 
-import javax.transaction.xa.XAException;
-import javax.transaction.xa.XAResource;
-import javax.transaction.xa.Xid;
+import javax.transaction.xa.tc.XAException;
+import javax.transaction.xa.tc.XAResource;
+import javax.transaction.xa.tc.Xid;
 
 import jakarta.transaction.TransactionManager;
 

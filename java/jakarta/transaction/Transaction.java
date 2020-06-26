@@ -16,7 +16,7 @@
  */
 package jakarta.transaction;
 
-import javax.transaction.xa.XAResource;
+import javax.transaction.xa.tc.XAResource;
 
 public interface Transaction {
 

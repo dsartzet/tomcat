@@ -108,6 +108,8 @@ base-maven.loc=https://repo.maven.apache.org/maven2
 # Mirror, was used when there were problems with the main SF downloads site
 # base-sf.loc=https://sunet.dl.sourceforge.net
 
+kwik.jar=${base.path}/kwik.jar
+
 # ----- Webservices - JAX RPC -----
 jaxrpc-lib.version=1.1-rc4
 jaxrpc-lib.checksum.enabled=true

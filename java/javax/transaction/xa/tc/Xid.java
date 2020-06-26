@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package javax.transaction.xa;
+package javax.transaction.xa.tc;
 
 public interface Xid {
     static final int MAXGTRIDSIZE = 64;

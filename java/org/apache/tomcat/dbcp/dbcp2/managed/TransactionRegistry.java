@@ -23,7 +23,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.WeakHashMap;
 
-import javax.transaction.xa.XAResource;
+import javax.transaction.xa.tc.XAResource;
 
 import jakarta.transaction.SystemException;
 import jakarta.transaction.Transaction;

@@ -14,7 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package javax.transaction.xa;
+package javax.transaction.xa.tc;
+
+import javax.transaction.xa.tc.XAResource;
+import javax.transaction.xa.tc.XAException;
+import javax.transaction.xa.tc.Xid;
 
 public interface XAResource {
     void commit(Xid xid, boolean onePhase) throws XAException;

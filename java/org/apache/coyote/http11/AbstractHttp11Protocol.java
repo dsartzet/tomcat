@@ -29,6 +29,8 @@ import java.util.regex.Pattern;
 
 import jakarta.servlet.http.HttpUpgradeHandler;
 
+import net.luminis.quic.*;
+
 import org.apache.coyote.AbstractProtocol;
 import org.apache.coyote.CompressionConfig;
 import org.apache.coyote.Processor;
@@ -59,6 +61,7 @@ public abstract class AbstractHttp11Protocol<S> extends AbstractProtocol<S> {
         ConnectionHandler<S> cHandler = new ConnectionHandler<>(this);
         setHandler(cHandler);
         getEndpoint().setHandler(cHandler);
+        getLog().info("Test - Hello Tomcat and " + QuicConnectionImpl.newBuilder().toString());
     }
 
 

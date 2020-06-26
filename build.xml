@@ -226,6 +226,7 @@
     <pathelement location="${saaj-api.jar}"/>
     <pathelement location="${jaxrpc-lib.jar}"/>
     <pathelement location="${wsdl4j-lib.jar}"/>
+    <pathelement location="${kwik.jar}"/>
   </path>
 
   <path id="tomcat.classpath">
